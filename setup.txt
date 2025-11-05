@@ -1,0 +1,41 @@
+Imager
+Ubuntu 
+sd card, power, hdmı, keyboard, mouse
+
+lsb_releade -a
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install openssh-server
+ip addr
+ssh ida@ip   ida -> name
+exit
+sudo reboot
+
+ping google.com
+
+-------------------------------------------
+(computer)
+Ubuntu (Headless)
+sd karta işletim sistemini kurduktan sonra çıkar tak yap
+
+touch /Volumes/boot/ssh
+vim /Volumes/boot/wpa_supplicant.conf
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=<US>   -> TR 
+network={
+ ssid="WIFI_NAME"  -> wifi name
+ psk="WIFI_PASSWORD"  -> wifi password
+}
+
+(raspi)
+ping raspberrypi.local  -> ip address
+ssh ida@ip   ida -> name
+uname -a (op-system)
+exit
+
+(hosting)
+sudo vim /etc/hosts
+
+
